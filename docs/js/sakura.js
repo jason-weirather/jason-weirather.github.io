@@ -1,4 +1,4 @@
-// Anand Davaasuren
+// Adapted from Anand Davaasuren https://codepen.io/at80/pen/tqdmv
 
 // Utilities
 var Vector3 = {};
