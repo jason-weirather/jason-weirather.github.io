@@ -1,6 +1,13 @@
-// Adapted from Anand Davaasuren https://codepen.io/at80/pen/tqdmv
+// Adapted from Frank FitzGerald (origin unknown) https://codepen.io/FrankFitzGerald/pen/LAbfm
 
 // Utilities
+var getSourceSynch = function(url) {
+  var req = new XMLHttpRequest();
+  req.open("GET", url, false);
+  req.send(null);
+  return (req.status == 200) ? req.responseText : null;
+}; 
+
 var Vector3 = {};
 var Matrix44 = {};
 Vector3.create = function(x, y, z) {
@@ -303,6 +310,7 @@ function createPointFlowers() {
     var prm = gl.getParameter(gl.ALIASED_POINT_SIZE_RANGE);
     renderSpec.pointSize = {'min':prm[0], 'max':prm[1]};
     
+    //var vtxsrc = document.getElementById("sakura_point_vsh").textContent;
     var vtxsrc = document.getElementById("sakura_point_vsh").textContent;
     var frgsrc = document.getElementById("sakura_point_fsh").textContent;
     
