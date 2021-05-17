@@ -21,6 +21,19 @@ canvas {
   box-shadow: 0px 0px 8px #ffc0cb99;
   font-size:0.6em;
   font-weight:700;
+  z-index:-1;
+}
+a:link {
+  color: #AAAAAA;
+}
+a:visited {
+  color: #888888;
+}
+a:hover {
+  color: #AAAAAA;
+}
+a:activated {
+  color: #888888;
 }
 .lato {
   font-family: 'Lato', sans-serif;
