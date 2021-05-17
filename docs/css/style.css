@@ -9,6 +9,10 @@ canvas {
     left:0;
     top:0;
 }
+#li_badge_container {
+    float:right;
+    padding:12px;
+}
 #about_div {
   text-align:right;
   border-radius: 5px;
