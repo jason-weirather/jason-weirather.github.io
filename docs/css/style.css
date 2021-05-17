@@ -3,15 +3,29 @@ body {
     margin:0;
     overflow:hidden;
     height: 600px;
+    background-color:#000000; 
 }
+.content_box {
+    box-shadow: 0px 0px 8px #ffc0cb99;
+}
+
+.badge-base { 
+    opacity:0.95;
+}
+
 canvas {
     position:fixed;
     left:0;
     top:0;
 }
+#first_box {
+    height:100%;
+}
 #li_badge_container {
-    float:right;
-    padding:12px;
+    position:absolute;
+    bottom:0;
+    padding:6px 6px 6px 6px;
+    zoom:90%;
 }
 #about_div {
   text-align:right;
@@ -22,7 +36,6 @@ canvas {
   right:6px;
   color:white;
   background-image: linear-gradient(to right, rgba(0,0,0,.5) , rgba(80, 43.9, 0,0.9));
-  box-shadow: 0px 0px 8px #ffc0cb99;
   font-size:0.6em;
   font-weight:700;
   z-index:-1;
