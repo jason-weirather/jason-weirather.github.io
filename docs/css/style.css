@@ -1,23 +1,26 @@
-/*Sakura animation using WebGL. No images are used. The framerate might be slow or the demo might not play at all in some older systems. Let me make it clear that I did not make this and just thought is was very cool and wanted to share it.
-*/
-
 body {
     padding:0;
     margin:0;
     overflow:hidden;
-	  height: 600px;
+    height: 600px;
 }
 canvas {
-    padding:0;
-    margin:0;
-}
-div.btnbg {
     position:fixed;
     left:0;
     top:0;
-    box-shadow: 0px 0px 15px #ccc;
 }
-div.btnbg:hover{
-    text-shadow: 0px 0px 3px #ccc;
-    box-shadow: 0px 0px 20px #ccc;
+#about_div {
+  text-align:right;
+  border-radius: 10px;
+  padding: 2px 8px 2px 8px;
+  position: fixed;
+  bottom:12px;
+  right:12px;
+  color:white;
+  background-image: linear-gradient(to right, rgba(0,0,0,.5) , rgba(80, 43.9, 0,0.9));
+  box-shadow: 0px 0px 8px #ffc0cbAA;
+  font-size:0.8em;
+}
+.lato {
+  font-family: 'Lato', sans-serif;
 }

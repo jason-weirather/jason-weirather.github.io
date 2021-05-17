@@ -1,21 +1,19 @@
 <html>
 <head>
 	<script src="js/sakura.js"></script>
-	<style>
-        body {
-        	margin:0;
-        }
-	</style>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="lato">
+	<div id="about_div">Modified Image "Nineizaka Road" CC-NC - Shawn Harquail<br>Modified JS Sakura Codepen - Frank FitzGerald</div>
 	<!-- 
     Background Image: 
 	Shawn Harquail "Nineizaka Road" https://creativecommons.org/licenses/by-nc/4.0/  
 	https://live.staticflickr.com/65535/49176936513_1c1d701650.jpg 
 	Modified, cropped and cartoon filter in GIMP. 
 	-->
-    <canvas id="sakura" style="background: url('images/parasol.jpeg'); background-size: cover; background-position: 50% 85%;"></canvas>
-
+    <canvas id="sakura" style="background: url('images/parasol.jpeg'); background-size: cover; background-position: 50% 85%; z-index: -1;"></canvas>
 <!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
 uniform mat4 uProjection;
